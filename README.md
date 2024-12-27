@@ -1,3 +1,19 @@
+<!-- :man_technologist:API DevBurguer -->
+
+<!-- DIY
+    yarn
+    yarn add express
+    Run: yarn dev
+    Nodemon: yarn add nodemon -D
+    Sucrase: yarn add sucrase -D
+    ESlint: yarn add eslint -D
+            yarn eslint --init
+            None framework javascripot, node..
+    Instalar Docker Desktop, se windows
+
+
+-->
+
 ## DevBurguer API - DevClub
 
 <div align="center">
@@ -31,7 +47,7 @@ Eslint e Prettier: Ferramentas para garantir a consistência e a qualidade do c�
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" title="PostgreSQL" alt="PostgreSQL" width="70" height="65"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" title="PostgreSQL" alt="PostgreSQL" width="70" height="65"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg" title="Sequelize" alt="Sequelize" width="70" height="65"/>&nbsp;
-  <img src="https://jwt.io/img/pic_logo.svg" title="JWToken" alt="JWToken" width="70" height="65"/>&nbsp;  
+  <img src="https://jwt.io/img/pic_logo.svg" title="JWToken" alt="JWToken" width="70" height="65"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" title="Eslint" alt="Eslint" width="70" height="65"/>&nbsp;
   <img src="https://avatars.githubusercontent.com/u/25822731?s=200&v=4" title="Prettier" alt="Prettier" width="70" height="65"/>&nbsp;
 
@@ -95,8 +111,8 @@ Hoje o meu propósito é ajudar o máximo de pessoas a transformarem suas vidas 
 🎓 Análise de Sistemas - Cruzeiro do Sul <br>
 💻 Estudante FullStack: DevClub <br>
 👩🏻‍💻 Autor do Site: <a href="https://igorlazzaretti.com/">igorlazzaretti.com</a> <br>
-📚 Leitor e Estudante de Inglês <br> 
-🧙‍♂️ Fã de Harry Potter  <br> 
+📚 Leitor e Estudante de Inglês <br>
+🧙‍♂️ Fã de Harry Potter  <br>
 
 <div align="center" >
 <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="27"/>
