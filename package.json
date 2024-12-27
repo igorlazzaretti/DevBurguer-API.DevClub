@@ -1,9 +1,9 @@
 {
   "name": "devburguer-api.devclub",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "dev"
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": {
@@ -15,5 +15,9 @@
   "description": "API do DevBurguer",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "sucrase": "^3.35.0"
   }
 }
