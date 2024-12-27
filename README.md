@@ -14,6 +14,8 @@
                             Se preciso, reinstale com wsl -uninstall até
                             digitar username e passowd do unix
     Instalar Docker Desktop
+    Instalar e conectar com o Beekeeper
+    
 
 -->
 
