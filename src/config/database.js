@@ -4,6 +4,8 @@ module.exports = {
     dialect: 'postgres',
     // Host: onde o banco está rodando
     host: 'localhost',
+    // Port: porta do banco
+    port: 5433,
     // Username: usuário do banco
     username: 'postgres',
     // Password: senha do banco
