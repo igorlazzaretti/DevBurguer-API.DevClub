@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 18 Módulo 1 | Cors, Finalizado Login de Usuário;
+Aula 19 Módulo 1 | Criada a Migration (Tabela) de Products;
 
 
     DIY
