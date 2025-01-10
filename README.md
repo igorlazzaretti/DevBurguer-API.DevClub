@@ -1,9 +1,14 @@
-<!-- :man_technologist:API DevBurguer -->
+<!--
+:man_technologist:API DevBurguer
+Aula 18 Módulo 1 | Cors, Finalizado Login de Usuário;
 
-<!-- DIY
+
+    DIY
     yarn
     yarn add express
-    Run: yarn dev
+    Para rodar:
+      Docker - rodar container com o Banco PostgreSQL
+      Run: yarn dev
     Nodemon: yarn add nodemon -D
     Sucrase: yarn add sucrase -D
     ESlint: yarn add eslint -D
@@ -15,7 +20,7 @@
                             digitar username e passowd do unix
     Instalar Docker Desktop
     Instalar e conectar com o Beekeeper
-    
+
 
 -->
 
