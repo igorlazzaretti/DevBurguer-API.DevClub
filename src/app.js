@@ -4,6 +4,9 @@ import routes from './routes'
 import cors from 'cors'
 import './database'
 
+// Para encontrar a pasta Uploads
+import { resolve } from 'node:path'
+
 class App {
     constructor() {
         this.app = express();
@@ -15,6 +18,9 @@ class App {
 
     middlewares() {
         this.app.use(express.json());
+        // Express entende a url da imagem product-file
+        this.app.use('/product-file', express.static(resolve(__dirname, '..', 'uploads')));
+
     }
 
     routes() {
