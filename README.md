@@ -9,8 +9,9 @@ Aula 19 Módulo 1 | Criada a Migration (Tabela) de Products;
     Para rodar:
       Docker - rodar container com o Banco PostgreSQL
       Run: yarn dev
-    Nodemon: yarn add nodemon -D
-    Sucrase: yarn add sucrase -D
+    Nodemon: yarn add nodemon -D (como dependencia de desenvolvimento)
+    Sucrase: yarn add sucrase -D (como dependencia de desenvolvimento)
+    Sequelize: yarn add -D sequelize-cli
     ESlint: yarn add eslint -D
             yarn eslint --init
             None framework javascripot, node..
@@ -19,7 +20,9 @@ Aula 19 Módulo 1 | Criada a Migration (Tabela) de Products;
                             Se preciso, reinstale com wsl -uninstall até
                             digitar username e passowd do unix
     Instalar Docker Desktop
+      docker run --name devburguer-postgres -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
     Instalar e conectar com o Beekeeper
+      Porta 5433 pass: postgres
 
 
 -->
