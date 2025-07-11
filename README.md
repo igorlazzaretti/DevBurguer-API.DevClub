@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 19 Módulo 1 | Criada a Migration (Tabela) de Products;
+Aula 3 Módulo 2 | JWT;
 
 
     DIY

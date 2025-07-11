@@ -3,6 +3,7 @@ import { Router } from 'express';
 // Multer: imagens
 import multer from 'multer';
 import multerConfig from './config/multer';
+import authMiddleware from './middlewares/auth';
 
 
 import UserController from './app/controllers/UserController';
@@ -14,8 +15,12 @@ const upload = multer(multerConfig)
 
 routes.post('/users', UserController.store)
 routes.post('/session', SessionController.store)
+
+// Protege as rotas abaixo com o middleware de autenticação
+routes.use(authMiddleware);
+
 routes.post('/products', upload.single('file'), ProductController.store)
-routes.get( '/products', ProductController.index)
+routes.get( '/products', authMiddleware, ProductController.index)
 
 
 // module.exports = routes;
