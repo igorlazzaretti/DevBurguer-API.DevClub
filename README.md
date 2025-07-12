@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 3 Módulo 2 | JWT;
+Aula 6 Módulo 2 | Validando Categoria Repetida;
 
 
     DIY
