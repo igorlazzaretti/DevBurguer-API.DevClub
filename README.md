@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 6 Módulo 2 | Validando Categoria Repetida;
+Aula 9 Módulo 2 | Alterando Controller de produtos;
 
 
     DIY
