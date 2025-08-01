@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 11 Módulo 2 | Criando Container e Banco com Mongoose;
+Aula 12 Módulo 2 | Criando Scheme de Pedidos;
 
 
     DIY

@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import authConfig from "../config/auth";
+import authConfig from "../../config/auth";
 
 function authMiddleware(req, response, next) {
     console.log('AuthMiddleware called');
