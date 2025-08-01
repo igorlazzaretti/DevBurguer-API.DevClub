@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 9 Módulo 2 | Alterando Controller de produtos;
+Aula 11 Módulo 2 | Criando Container e Banco com Mongoose;
 
 
     DIY
