@@ -59,10 +59,13 @@ class OrderController {
                 name: req.userName,
             },
             productsIds,
-            formattedProducts,
+            products: formattedProducts,
+            status: 'Pedido realizado',
         }
+        // Criando o pedido no banco de dados
+        const createdOrder = await Order.create(order);
 
-        return response.status(201).json(order)
+        return response.status(201).json(createdOrder)
     }
 }
 
