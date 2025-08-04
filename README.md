@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 12 Módulo 2 | Criando Scheme de Pedidos;
+Aula 13 Módulo 2 | Criando Controller de Pedidos;
 
 
     DIY

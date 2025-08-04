@@ -11,14 +11,14 @@ function authMiddleware(req, response, next) {
     }
 
     const token = authToken.split(' ')[1];
-
     try {
         jwt.verify(token, authConfig.secret, (err, decoded) => {
             if (err) {
                 throw new Error('Token invalid');
             }
-            console.log('Consolelog para o decoded: ', decoded);
+            console.log('Decoded token: ', decoded);
             req.userId = decoded.id;
+            req.userName = decoded.name;
         });
     } catch (err) {
         return response.status(401).json({ error: 'Token invalid' });
