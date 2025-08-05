@@ -29,6 +29,8 @@ routes.post('/categories', CategoryController.store)
 routes.get('/categories', CategoryController.index)
 // Rotas de Pedidos (Orders)
 routes.post('/orders', OrderController.store)
+routes.get('/orders', OrderController.index)
+routes.put('/orders/:id', OrderController.update)
 
 // module.exports = routes;
 export default routes;

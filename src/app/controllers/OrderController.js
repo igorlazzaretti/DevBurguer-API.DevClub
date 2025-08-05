@@ -67,6 +67,35 @@ class OrderController {
 
         return response.status(201).json(createdOrder)
     }
+    // Lista os pedidos
+    async index(request, response) {
+        const orders = await Order.find();
+
+        return response.json(orders);
+    }
+    // Atualiza o status do pedido
+    async update(request, response) {
+        // Validamos se esta sendo atualizado o status do pedido
+        const schema = Yup.object({
+            status:  Yup.string().required()
+        })
+        try {
+            await schema.validate(request.body, { abortEarly: false })
+        } catch (err) {
+            return response.status(400).json({ error: err.errors })
+        }
+
+        const { id } = request.params;
+        const { status } = request.body;
+
+        try {
+            await Order.updateOne({ _id: id }, { status });
+        } catch (err) {
+            return response.status(400).json({ error: err.message });
+        }
+
+        return response.json({ message: 'Status updated sucessfuly.' });
+    }
 }
 
 export default new OrderController();
