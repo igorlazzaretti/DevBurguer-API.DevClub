@@ -1,5 +1,6 @@
 import * as Yup from 'yup';
 import Category from '../models/Category';
+import User from '../models/User';
 
 
 class CategoryController {
@@ -13,6 +14,12 @@ class CategoryController {
         } catch (err) {
             return res.status(400).json({ error: err.errors });
         }
+        // Verifica se o usuário é um administrador
+        const {admin: isAdmin} = await User.findByPk(req.userId);
+        if (!isAdmin) {
+            return res.status(401).json({ error: 'Unauthorized' });
+        }
+
         const { name } = req.body;
 
         // Verifica se a categoria já existe

@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 15 Módulo 2 | Atualizando status do pedido;
+Aula 16 Módulo 2 | Valiodando Usuário Admin;
 
 
     DIY
