@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 16 Módulo 2 | Valiodando Usuário Admin;
+Aula 16 Módulo 2 | Update dos Produtos;
 
 
     DIY

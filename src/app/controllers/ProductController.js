@@ -8,7 +8,8 @@ class ProductController {
         const schema = Yup.object({
             name:  Yup.string().required(),
             price: Yup.number().required(),
-            category_id: Yup.number().required()
+            category_id: Yup.number().required(),
+            offer: Yup.boolean(),
         })
         try {
             await schema.validate(request.body, { abortEarly: false })
@@ -24,17 +25,67 @@ class ProductController {
         }
 
         const { filename: path } = request.file;
-        const { name, price, category_id } = request.body;
+        const { name, price, category_id, offer } = request.body;
 
         const product = await Product.create({
             name,
             price,
             category_id,
-            path
+            path,
+            offer
         });
 
         return response.status(201).json(product)
     }
+    // Atualiza o produto
+    async update(request, response) {
+        const schema = Yup.object({
+            name:  Yup.string(),
+            price: Yup.number(),
+            category_id: Yup.number(),
+            offer: Yup.boolean(),
+        })
+        try {
+            await schema.validate(request.body, { abortEarly: false })
+        } catch (err) {
+            return response.status(400).json({ error: err.errors })
+        }
+
+        // Verifica se o usuário é um administrador
+        const {admin: isAdmin} = await User.findByPk(request.userId);
+
+        if (!isAdmin) {
+            return response.status(401).json({ error: 'Unauthorized' });
+        }
+
+        const { id } = request.params;
+        const findProduct = await Product.findByPk(id);
+
+        if (!findProduct) {
+            return response.status(404).json({ error: 'Make sure id is correct' });
+        }
+
+        let path;
+        if (request.file) {
+            path = request.file.filename;
+        }
+
+        const { name, price, category_id, offer } = request.body;
+
+        await Product.update({
+            name,
+            price,
+            category_id,
+            path,
+            offer
+        }
+        , {
+            where: { id }
+        });
+
+        return response.status(200).json()
+    }
+
     // Lista todos os produtos / List all products
     async index(request, response) {
         const products = await Product.findAll({

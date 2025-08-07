@@ -23,6 +23,7 @@ routes.post('/session', SessionController.store)
 routes.use(authMiddleware);
 // Rotas de Produtos
 routes.post('/products', upload.single('file'), ProductController.store)
+routes.put('/products/:id', upload.single('file'), ProductController.update)
 routes.get( '/products', authMiddleware, ProductController.index)
 //Rotas de Categorias
 routes.post('/categories', CategoryController.store)
