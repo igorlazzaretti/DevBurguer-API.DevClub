@@ -20,6 +20,8 @@ class App {
         this.app.use(express.json());
         // Express entende a url da imagem product-file
         this.app.use('/product-file', express.static(resolve(__dirname, '..', 'uploads')));
+        // Express entende a url da imagem category-file
+        this.app.use('/category-file', express.static(resolve(__dirname, '..', 'uploads')));
 
     }
 

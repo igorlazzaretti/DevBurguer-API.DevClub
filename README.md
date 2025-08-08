@@ -1,6 +1,6 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 16 Módulo 2 | Update dos Produtos;
+Aula 18 Módulo 2 | Update dos Categorias;
 
 
     DIY
