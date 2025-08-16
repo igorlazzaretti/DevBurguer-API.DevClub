@@ -22,7 +22,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      patch: {
+      path: {
         type: Sequelize.STRING,
         allowNull: false,
       },
