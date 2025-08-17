@@ -1,8 +1,10 @@
 <!--
 :man_technologist:API DevBurguer
-Aula 18 Módulo 2 | Update dos Categorias;
+Aula 19 Módulo 2 | Atualização Banco de Dados com Seed;
 
+Figma: https://www.figma.com/design/iggbPQzl4BsDC0gKKifcwG/DevBurger?node-id=0-1&p=f
 
+-0-
     DIY
     yarn
     yarn add express
