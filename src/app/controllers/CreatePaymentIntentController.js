@@ -1,5 +1,6 @@
 import Stripe from 'stripe'
-const stripe = new Stripe('');
+require('dotenv').config();
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 import * as Yup from 'yup'
 
 const calculateOrderAmount  = (items) => {

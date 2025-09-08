@@ -1,6 +1,6 @@
 <!--
-:man_technologist:API DevBurguer
-Aula 19 Módulo 2 | Atualização Banco de Dados com Seed;
+:man_technologist:Interface DevBurguer
+Dotenv | Inserindo Dotenv com a Secretkey do Stripe
 
 Figma: https://www.figma.com/design/iggbPQzl4BsDC0gKKifcwG/DevBurger?node-id=0-1&p=f
 
