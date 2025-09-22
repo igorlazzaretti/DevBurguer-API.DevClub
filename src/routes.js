@@ -26,7 +26,8 @@ routes.use(authMiddleware);
 // Rotas de Produtos
 routes.post('/products', upload.single('file'), ProductController.store)
 routes.put('/products/:id', upload.single('file'), ProductController.update)
-routes.get( '/products', authMiddleware, ProductController.index)
+routes.get( '/products', ProductController.index)
+routes.delete('/products/:id', ProductController.destroy)
 //Rotas de Categorias
 routes.post('/categories', upload.single('file'), CategoryController.store)
 routes.get('/categories', CategoryController.index)

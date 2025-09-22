@@ -1,4 +1,4 @@
-import * as Yup from 'yup';
+ import * as Yup from 'yup';
 import Product from '../models/Product';
 import Category from '../models/Category';
 import User from '../models/User';
@@ -96,6 +96,29 @@ class ProductController {
                 ]
         });
         return response.json(products);
+    }
+
+    // Deleta o produto
+    async destroy(request, response) {
+        // Verifica se o usuário é um administrador
+        const {admin: isAdmin} = await User.findByPk(request.userId);
+
+        if (!isAdmin) {
+            return response.status(401).json({ error: 'Unauthorized operation.' });
+        }
+        const { id } = request.params;
+
+        try {
+            const product = await Product.findByPk(id);
+
+            if (!product) {
+                return response.status(404).json({ error: 'Product not found.' });
+            }
+            await product.destroy();
+            return response.status(204).send();
+        } catch (err) {
+            return response.status(500).json({ error: 'Internal server error.' });
+        }
     }
 }
 
